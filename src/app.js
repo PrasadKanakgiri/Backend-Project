@@ -13,5 +13,8 @@ app.use(express.urlencoded({extended: true, limit:"16kb"}))  // this is used to 
 app.use(express.static("public"))  // this is used to store files in image, pdf format
 app.use(cookieParser())
 
-
+// route import
+import userRouter from './routes/user.routes.js'
+// route declaration
+app.use("/api/v1/users", userRouter)
 export {app}
