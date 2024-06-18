@@ -3,7 +3,7 @@ import { ApiError } from "../utils/ApiError.utils.js";
 import { User } from "../models/user.models.js";
 import { uploadOnCloudinary } from "../utils/cloudinary.utils.js";
 import { ApiResponse } from "../utils/ApiResponse.utils.js";
-import { jwt } from "jsonwebtoken";
+import  jwt  from "jsonwebtoken";
 import mongoose, { mongo } from "mongoose";
 
 const generateAccessAndRefereshTokens = async(userId) =>{
